@@ -1,0 +1,18 @@
+12+7*9
+Translate in OPN:
+1. Stack: 		output string: 12 
+2. Stack: + 		output string: 12 
+3. Stack: + 		output string: 12 7 
+4. Stack: * + 		output string: 12 7 
+5. Stack: * + 		output string: 12 7 9 
+6. Stack: 		output string: 12 7 9 * + 
+Reverse polish notation: 12 7 9 * + 
+Calculations: 
+1. Writing to the stack 12
+2. Writing to the stack 7
+3. Writing to the stack 9
+4. Taking it out of the stack 7 ? 9, multiply and return to the stack 63
+5. Taking it out of the stack 12 ? 63, we add it up and return it to the stack 75
+Returning the top element of the stack
+Answer: 75
+*****************************************
